@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+<body><div class="main_container">
+	<div data-role="content" data-inset="false" style="margin: 0; padding: 0; padding-top: 10px;">
+
+
+  <div class="column" style="background: transparent;">
+  </div>
+  <div class="column" style="background: transparent;">
+  </div>
+  
+<script>
+
+	$(document).ready(function(){
+		$('.entry_summary').ellipsis();
+		$('.summary_entry_title').ellipsis();
+  	$('.show_button_link, .article').click(function(e) {
+  		article_id = (this.id).replace('show_id_link_','');
+			showArticle(article_id);
+  	})
+  });
+
+</script>
+</div>
+
+</div></body>
+</html>
